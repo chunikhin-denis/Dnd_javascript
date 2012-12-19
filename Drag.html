@@ -24,19 +24,14 @@
    </tr>
 </table>
 
-
-
-
-
-
 </form>
 <script type="text/javascript">
 window.setInterval(function() {
-  // Ïåðåäàåì ãëîáàëüíûé êîíòåêñò, âíóòðè ýòîé ôóíêöèè this = window
+ 
   var dragDrop = Dragger(this);
-  // Ïîëó÷àåì âñå ýëåìåíòû div
+
   var divs = document.getElementsByTagName("DIV");
-  // Ñäåëàåò âñå ýëåìåíòû div íà ñòðàíèöå ïåðåòàñêèâàåìûìè:
+  
   dragDrop.makeDragDrop(divs);
 },10)
 
