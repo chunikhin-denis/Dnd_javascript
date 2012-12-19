@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="uk">
+<heAD>
+	<script src="OOP.js" ></script>
+	<script src="Drag'n'Drop.js" ></script>
+</head>
+<body >
+<form>
+<table>
+  <tr>
+    <td style="width:70px">Âûñîòà:</td>
+	<td><input type="text" name="pole1" value="100"/></td>
+	<td style="width:100px">Ïîëîæåíèå Õ:</td>
+	<td><input type="text" name="pole3" value="100"/></td>
+  </tr>
+  <tr>
+    <td style="width:70px">Øèðèíà:</td>
+	<td><input type="text" name="pole2" value="300"/></td>
+	<td style="width:100px">Ïîëîæåíèå Ó:</td>
+	<td><input type="text" name="pole4" value="100"/></td>
+  </tr>
+  <tr>
+    <td colspan=4 align="center"><input style="width:400px" type="button" onclick="CreateDiv()" value="Create div"/></td>
+   </tr>
+</table>
+
+
+
+
+
+
+</form>
+<script type="text/javascript">
+window.setInterval(function() {
+  // Ïåðåäàåì ãëîáàëüíûé êîíòåêñò, âíóòðè ýòîé ôóíêöèè this = window
+  var dragDrop = Dragger(this);
+  // Ïîëó÷àåì âñå ýëåìåíòû div
+  var divs = document.getElementsByTagName("DIV");
+  // Ñäåëàåò âñå ýëåìåíòû div íà ñòðàíèöå ïåðåòàñêèâàåìûìè:
+  dragDrop.makeDragDrop(divs);
+},10)
+
+</script>
+</body>
+</html>
